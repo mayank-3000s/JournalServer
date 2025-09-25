@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
+require("dotenv").config();
 
-const mongoURL = "mongodb://127.0.0.1:27017/aiJournalUserDB";
+//const mongoURL = `mongodb+srv://mayankkne11_db_user:${process.env.DB_PASSWORD}@journaldb.m8nccig.mongodb.net/`
+const mongoURL = `mongodb+srv://mayankkne11_db_user:${process.env.DB_PASSWORD}@journaldb.m8nccig.mongodb.net/`
 
 mongoose.connect(mongoURL);
 
